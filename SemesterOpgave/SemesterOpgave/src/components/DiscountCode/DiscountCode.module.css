@@ -1,0 +1,27 @@
+.wrapper {
+    margin-top: 1rem;
+  }
+  
+  .inputGroup {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 0.5rem;
+  }
+  
+  .button {
+    background: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .message {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  

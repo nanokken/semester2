@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+.navigation {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #1c1c1c;
+  color: white;
+  position: relative;
+  z-index: 10;
+  font-family: "Oxygen", sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Oxygen", sans-serif;
+}
+
+.logoImg {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.desktopNav {
+  display: flex;
+  gap: 2rem;
+  font-family: "Oxygen", sans-serif;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+  font-family: "Oxygen", sans-serif;
+}
+
+.link:hover,
+.link.active {
+  border-bottom: 2px solid white;
+}
+
+.burgerIcon {
+  display: none;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(28, 28, 28, 0.98);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  z-index: 1000;
+  font-family: "Oxygen", sans-serif;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.cartThing{
+  cursor: pointer;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  font-family: "Oxygen", sans-serif;
+}
+
+.mobileLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  font-family: "Oxygen", sans-serif;
+}
+
+.mobileLink:hover,
+.mobileLink:active {
+  color: lightskyblue;
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .burgerIcon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 993px) {
+  .burgerIcon {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+}

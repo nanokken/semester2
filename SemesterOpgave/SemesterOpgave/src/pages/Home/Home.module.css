@@ -1,0 +1,182 @@
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero {
+  width: 100%;
+  height: 80vh; /* Adjusted height */
+  background: linear-gradient(
+      rgba(102, 192, 188, 0.5),
+      rgba(102, 192, 188, 0.5)
+    ),
+    url("../../assets/stock/hero.jpg") no-repeat center center/cover;
+  backdrop-filter: blur(10px); /* Adds blur effect to the background */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.containerHero {
+  width: 630px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column; /* Mobile-first: stack items vertically */
+  gap: 1rem;
+  margin-top: 2rem;
+  width: 100%; /* Ensures the section spans the full width */
+  align-items: center; /* Center items on mobile */
+  padding: 0 2rem; /* Adds padding to prevent items from touching the edges */
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  color: black;
+  text-align: center; /* Center text */
+}
+
+.icon {
+  color: #007bff;
+}
+
+.featuredContainer {
+  margin: 2rem auto; /* Centers the container horizontally */
+  width: 100%;
+  max-width: 1200px; /* Restrict the width to stay within the page */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white; /* Changed background to white */
+  padding: 2rem;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  position: relative; /* Added to ensure arrows stay within the container */
+}
+
+.featuredTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.featuredProducts {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center; /* Center the products */
+}
+
+.featuredItem {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
+
+.featuredImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.featuredName {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: black;
+}
+
+.featuredRating {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  left: -2rem; /* Adjusted to stay within the container */
+}
+
+.arrowRight {
+  right: -2rem; /* Adjusted to stay within the container */
+}
+
+@media (min-width: 992px) {
+  .infoSection {
+    flex-direction: row; /* Desktop: display items horizontally */
+    justify-content: space-evenly; /* Space items evenly */
+    padding: 0 5rem; /* Adds margin on the left and right for better centering */
+  }
+
+  .infoItem {
+    flex: 1; /* Makes each item take equal space */
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    display: block; /* Show arrows on desktop */
+  }
+
+  .featuredProducts {
+    overflow-x: hidden; /* Prevent scrolling on desktop */
+  }
+}

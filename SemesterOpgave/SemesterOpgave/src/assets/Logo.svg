@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-width: 11px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #eba4de;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #fff;
+        stroke-width: 20px;
+      }
+    </style>
+  </defs>
+  <g>
+    <polygon class="cls-3" points="886.69 21.36 886.69 978.64 113.31 514.15 886.69 21.36"/>
+    <polyline class="cls-4" points="721.94 483.76 722.77 684.29 456.46 524.12 886.69 235.81"/>
+  </g>
+  <g>
+    <polygon class="cls-1" points="872.51 46.53 872.51 952.79 140.35 513.06 872.51 46.53"/>
+    <polyline class="cls-2" points="716.54 484.28 717.33 674.13 465.22 522.49 872.51 249.55"/>
+  </g>
+</svg>

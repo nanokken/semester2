@@ -1,0 +1,33 @@
+.banner {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.banner button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #45a049;
+}

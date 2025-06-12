@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+.footer {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oxygen", sans-serif;
+  font-size: 1.3rem;
+}
+
+.footerContent {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2rem 0;
+}
+
+.footerSupport,
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footerLinks a,
+.footerSupport a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2em;
+  transition: text-decoration 0.2s;
+}
+
+.footerLinks a:hover,
+.footerSupport a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+  .footerContent {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .footerSupport {
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .footerLinks {
+    align-items: flex-end;
+    margin: 0;
+  }
+
+  .footerContent > p {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    font-size: 1.3em;
+  }
+}
+
+/* Oxygen font utility classes */
+.oxygen-light {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.oxygen-regular {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oxygen-bold {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

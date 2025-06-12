@@ -1,0 +1,80 @@
+.products {
+  padding: 2rem;
+}
+
+.filter {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter button:hover {
+  background-color: #0056b3;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.productBox {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.productImage {
+  width: 100%;
+  height: 200px; /* Ensures all images have the same height */
+  object-fit: cover; /* Ensures images are cropped proportionally */
+  background-color: white; /* Adds a white background to maintain uniformity */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.productBox h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.productBox p {
+  margin: 0.5rem 0;
+}
+
+.productBox button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.productBox button:hover {
+  background-color: #0056b3;
+}
+
+.productBox a {
+  display: block;
+  margin-top: 0.5rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.productBox a:hover {
+  text-decoration: underline;
+}

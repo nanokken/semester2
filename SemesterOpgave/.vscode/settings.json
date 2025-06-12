@@ -1,0 +1,28 @@
+{
+  "folder-color.pathColors": [
+    {
+      "folderPath": "SemesterOpgave\\src\\pages\\Contact\\",
+      "color": "foldercolorizer.color_00ccff"
+    },
+    {
+      "folderPath": "SemesterOpgave\\src\\pages\\Cart\\",
+      "color": "foldercolorizer.color_99cc00"
+    },
+    {
+      "folderPath": "SemesterOpgave\\src\\pages\\Home\\",
+      "color": "foldercolorizer.color_9900ff"
+    },
+    {
+      "folderPath": "SemesterOpgave\\src\\pages\\ProductPage\\",
+      "color": "foldercolorizer.color_cc0000"
+    },
+    {
+      "folderPath": "SemesterOpgave\\src\\pages\\Products\\",
+      "color": "foldercolorizer.color_ffcc00"
+    },
+    {
+      "folderPath": "SemesterOpgave\\src\\pages\\Support\\",
+      "color": "foldercolorizer.color_00ccff"
+    }
+  ]
+}
